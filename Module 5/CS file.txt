@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Practice01
+{
+    public partial class grades : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            dvGrdslp.Visible = false;
+            if (!IsPostBack)
+            {
+                drpGender.Items.Add(new ListItem("Gay", "2"));
+                drpGender.Items.Add(new ListItem("Tomboy", "3"));
+            }
+            
+        }
+
+        protected void btnCompute_Click(object sender, EventArgs e)
+        {
+            dvGrdslp.Visible = true;
+            Response.Write(drpGender.SelectedItem.Text);
+            Response.Write("<br/> " + drpGender.SelectedValue);
+            Response.Write("<br/> " + drpGender.SelectedIndex);
+            Response.Write("<br/> The total Count " + drpGender.Items.Count);
+            //float gr1 = float.Parse(txtgr1.Text);
+            //float gr2 = float.Parse(txtgr2.Text);
+            //float gr3 = float.Parse(txtgr3.Text);
+            //float ave = (gr1 + gr2 + gr3) / 3;
+            //int av = (int)ave;
+            //string rem = "";
+            ////using switch statement
+            //switch (av/10) {
+            //    case 10: case 9:
+            //        rem = "Excellent";
+            //        break;
+            //    case 8:
+            //        rem = "Good";
+            //        break;
+            //    case 7:
+            //        rem = "Average";
+            //        break;
+            //    case 6:
+            //        rem = "Poor";
+            //        break;
+            //    default:
+            //        rem = "Failed";
+            //        break;
+            //}
+
+            ///*  if (ave < 60)
+            //      rem = "Failed";
+            //  else if (ave >= 60 && ave <= 69)
+            //      rem = "Poor";
+            //  else if (ave >= 70 && ave <= 79)
+            //      rem = "Average";
+            //  else if (ave >= 80 && ave <= 89)
+            //      rem = "Good";
+            //  else 
+            //      rem = "Excellent";
+            //if (ave >= 90)
+            //    rem = "Excellent";
+            //else if (ave >= 80)
+            //    rem = "Good";
+            //else if (ave >= 70)
+            //    rem = "Average";
+            //else if (ave >= 60)
+            //    rem = "Poor";
+            //else
+            //    rem = "Failed";*/
+
+            //lblgr.Text = ave.ToString("###.00");
+            //lblrem.Text = rem;
+        }
+
+        protected void rdbtngndr1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbtngndr1.Checked == true)
+            {
+                Response.Write("Lalaki po ako!");
+            }
+        }
+
+        protected void rdbtngndr2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbtngndr2.Checked == true)
+            {
+                Response.Write("Babae po ako!");
+            }
+        }
+    }
+}

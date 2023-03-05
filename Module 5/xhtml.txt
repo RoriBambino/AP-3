@@ -1,0 +1,43 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="grades.aspx.cs" Inherits="Practice01.grades" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Prelim Grade<br />
+            <asp:TextBox ID="txtgr1" runat="server" type="number" step=".1" max="100" min="0"></asp:TextBox>
+            <br />
+            Midterm Grade <br />
+            <asp:TextBox ID="txtgr2" runat="server" type="number" step=".1" max="100" min="0"></asp:TextBox>
+            <br />
+            Temp. Final Grade <br /> 
+            <asp:TextBox ID="txtgr3" runat="server" type="number" step=".1" max="100" min="0"></asp:TextBox>
+            <br /><br />
+            <asp:Button ID="btnCompute" runat="server" Text="Compute Grade" OnClick="btnCompute_Click" /><br /><br />
+            <div id="dvGrdslp" runat="server">
+                <b>Final Grade:&nbsp;&nbsp;<asp:Label ID="lblgr" runat="server" Text=""></asp:Label><br /></b>
+                <b>Remarks:&nbsp;&nbsp;<asp:Label ID="lblrem" runat="server" Text=""></asp:Label></b>
+            </div>
+            <br /><br />
+            Gender: <br />
+                <asp:DropDownList ID="drpGender" runat="server" Height="19px" Width="226px">
+                    <%--<asp:ListItem Text="---Select Gender---" Value="" Selected="False"></asp:ListItem>--%>
+                    <asp:ListItem Text="--Select Gender--" Value="" disabled Selected></asp:ListItem>
+                    <asp:ListItem Value="1">Male</asp:ListItem>
+                    <asp:ListItem Value="0">Female</asp:ListItem>
+
+                </asp:DropDownList>
+            <br /><br />
+            <h4>Using Radiobutton</h4><br />
+            Gender
+            <asp:RadioButton ID="rdbtngndr1" runat="server" Text="Male" GroupName="gender" OnCheckedChanged="rdbtngndr1_CheckedChanged" />&nbsp;&nbsp;&nbsp;&nbsp
+            <asp:RadioButton ID="rdbtngndr2" runat="server" Text="Female"  GroupName="gender" OnCheckedChanged="rdbtngndr2_CheckedChanged" />
+        </div>
+    </form>
+</body>
+</html>
