@@ -10,14 +10,17 @@
             font-size: small;
             width: 894px;
             text-align: left;
+            position: absolute;
+            left: 20px;
+            top: 140px;
         }
         .auto-style8 {
-            width: 74%;
-            height: 141px;
+            width: 58%;
+            height: 326px;
             font-size: small;
-            right: 194px;
-            position: static;
-            top: 265px;
+            right: 418px;
+            position: absolute;
+            top: 216px;
         }
         .auto-style10 {
             height: 14px;
@@ -96,10 +99,10 @@
             margin-left: 0px;
         }
         .auto-style39 {
-            width: 23%;
+            width: 22%;
             position: absolute;
-            left: 696px;
-            top: 242px;
+            left: 699px;
+            top: 217px;
             height: 363px;
             font-size: x-small;
         }
@@ -131,10 +134,10 @@
         .auto-style50 {
             width: 98px;
             height: 92px;
-            position: fixed;
-            left: 18px;
-            top: 22px;
-            right: 840px;
+            position: absolute;
+            left: 8px;
+            top: 9px;
+            right: 830px;
         }
         .auto-style51 {
             margin-left: 201px;
@@ -171,11 +174,18 @@
         }
         .auto-style60 {
             height: 106px;
+            position: fixed;
+            left: 10px;
+            top: 15px;
+            width: 109px;
         }
         .auto-style61 {
             font-size: small;
             width: 895px;
             text-align: left;
+            position: absolute;
+            left: 21px;
+            top: 179px;
         }
         .auto-style62 {
             height: 18px;
@@ -194,11 +204,11 @@
     <div class="col-3; row-6">
         
         <div class="auto-style30">
-            <p class="auto-style60" style="position: fixed">
+            <p class="auto-style60" style="position: absolute">
             
-                <img alt="CTU Logo" class="auto-style50" src="fonts/img/CTU_new_log.png" style="position: fixed" />
-                <p class="auto-style52">R. Palma St., Cebu City</p>
-                <p class="auto-style51">Cebu Technological University-Main Campus</p>
+                <img alt="CTU Logo" class="auto-style50" src="fonts/img/CTU_new_log.png" />
+                <p class="auto-style52" style="position: absolute">R. Palma St., Cebu City</p>
+                <p class="auto-style51" style="position: absolute">Cebu Technological University-Main Campus</p>
                 <p class="auto-style62">mis@ctu.edu.ph</p>
             
            
@@ -309,7 +319,7 @@
     </table>
             
        
-    <table class="auto-style39" border="1" style="B" >
+    <table class="auto-style39" border="1" >
         <tr>
             <td class="auto-style63">FEE</td>
              <td class="auto-style43">Amount</td>
