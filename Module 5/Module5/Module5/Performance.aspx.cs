@@ -787,6 +787,7 @@ namespace Module5
             output_fname.Text = fname + "" + lname;
             output_hrswrk.Text = hrswrk.ToString();
             
+           
 
 
         }
@@ -807,7 +808,7 @@ namespace Module5
                 gendrespo.Text = "Male" ;
             }
         }
-        // Witholding Tax depending on Civil Status
+       
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
           
@@ -820,6 +821,14 @@ namespace Module5
 
         }
 
-       
+        // Clear Button
+        protected void reset_Click(object sender, EventArgs e)
+        {
+            input_fname.Text = "";
+            input_lname.Text = "";
+            Civillist.ClearSelection();
+            input_hrswrk.Text = "";
+            Employmentlist.ClearSelection();
+        }
     }
 }

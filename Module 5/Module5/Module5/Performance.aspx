@@ -395,7 +395,7 @@
                 <asp:ListItem Value="C">Casual</asp:ListItem>
                 <asp:ListItem Value="PT"> Part Timers</asp:ListItem>
             </asp:DropDownList>
-            <asp:Button ID="Button2" runat="server" CssClass="auto-style17" Text="Reset" ToolTip="Reset" />
+            <asp:Button ID="reset" runat="server" CssClass="auto-style17" Text="Reset" ToolTip="Reset" OnClick="reset_Click" />
             <strong>
             <asp:Label ID="Label8" runat="server" CssClass="auto-style18" Text="Employee Payslip"></asp:Label>
             <asp:Label ID="Label9" runat="server" CssClass="auto-style19" Text="Employee Information"></asp:Label>
@@ -439,7 +439,7 @@
             <strong>
             <asp:Label ID="Label25" runat="server" CssClass="auto-style35" Text="Total Deductions:"></asp:Label>
             </strong>
-            <asp:RadioButton ID="mbutton" runat="server" CssClass="auto-style52" OnCheckedChanged="mbutton_CheckedChanged" Text="Male" />
+            <asp:RadioButton ID="mbutton" runat="server" CssClass="auto-style52" GroupName="gender" OnCheckedChanged="mbutton_CheckedChanged" Text="Male" />
         </div>
     </form>
 </body>
