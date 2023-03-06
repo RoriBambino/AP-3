@@ -322,14 +322,14 @@
         .auto-style47 {
             position: absolute;
             top: 728px;
-            left: 85px;
+            left: 90px;
             z-index: 1;
             width: 256px;
         }
         .auto-style48 {
             position: absolute;
             top: 745px;
-            left: 72px;
+            left: 74px;
             z-index: 1;
             width: 371px;
             margin-bottom: 0px;
@@ -343,15 +343,15 @@
         }
         .auto-style50 {
             position: absolute;
-            top: 794px;
-            left: 139px;
+            top: 796px;
+            left: 141px;
             z-index: 1;
             width: 304px;
         }
         .auto-style51 {
             position: absolute;
             top: 848px;
-            left: 115px;
+            left: 116px;
             z-index: 1;
             width: 247px;
         }

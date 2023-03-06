@@ -22,7 +22,7 @@ namespace Module5
             int hrswrk = Convert.ToInt32(input_hrswrk.Text);
             double overtime_hr = 1.5;
             int regular_hrswrk = 8;
-            double reg_workdays = 120 / regular_hrswrk; // 15 days in working time or 3 weeks
+            double reg_workdays;
             double rate_perday, days_work, rate_perhr, reg_otr,p_otr,c_otr, pt_otr, otr_pay, grosspay, basic_pay = 0.00, sss_deduciton;
             double ot_hrs = hrswrk - 120;
             double s_withholdingtax = 0.1575;
@@ -30,18 +30,17 @@ namespace Module5
             double w_withholdingtax = 0.1235;
             double oth_withholdingtax = 0.1260;
             int philhealth_deduct;
-            double pagibig_deduct;
-            double total_deduct;
-            double net_earnings;
+            double pagibig_deduct,total_deduct,net_earnings, shw_witholdingtax, shw_pagibig, shw_sss, show_philhealth;
+            
+            
             // Employment Status and Gross pay
 
             if (Employmentlist.SelectedValue == "R")
             {               
                 rate_perday = 490.88;
                 rate_perhr = rate_perday / regular_hrswrk;       
-                reg_otr = rate_perhr * overtime_hr * regular_hrswrk;
-                reg_workdays = hrswrk / regular_hrswrk;
-                basic_pay =  rate_perhr * reg_workdays;
+                reg_otr = rate_perhr * overtime_hr * regular_hrswrk;              
+                basic_pay =  hrswrk * rate_perhr;
                 output_rph.Text = rate_perhr.ToString("0.00");
                 output_bscpay.Text = basic_pay.ToString("0.00");
 
@@ -61,70 +60,78 @@ namespace Module5
                 {
                     pagibig_deduct = 0.0275;
                     grosspay = (basic_pay + otr_pay)* 2;
-                    double shw_witholdingtax = grosspay * s_withholdingtax;
-                    double output_tax = shw_witholdingtax * 100;
-                    double shw_pagibig = grosspay - pagibig_deduct;
-                    output_wthldngtax.Text = output_tax.ToString("0.00");
+                    shw_witholdingtax = grosspay * s_withholdingtax; 
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = shw_pagibig.ToString();
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
                     show_CS.Text = "Single";
+                    
+                    
                     // SSS Deduction and Philhealth
                     if (grosspay >= 12000.00)
                     {
-                        sss_deduciton = 0.115;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 420;
+                        sss_deduciton = 0.115;
+                        shw_sss = grosspay * sss_deduciton;
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+                        
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+                       
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
-
+                    
                 }
                 else if (Civillist.SelectedValue == "M")
                 {
                     pagibig_deduct = 0.0375;
-                    double shw_pagibig = pagibig_deduct * 100;
-                    grosspay = basic_pay + otr_pay - m_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * m_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = shw_pagibig.ToString();
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
                     show_CS.Text = "Married";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+                        
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+                        
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+                        
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
@@ -133,32 +140,38 @@ namespace Module5
                 else if (Civillist.SelectedValue == "W")
                 {
                     pagibig_deduct = 0.0255;
-                    double shw_pagibig = pagibig_deduct * 100;
-                    grosspay = basic_pay + otr_pay - w_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * w_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
                     output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Widow";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+                        
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+                        
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+                       
                         output_philhealth.Text = philhealth_deduct.ToString();
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
@@ -166,55 +179,62 @@ namespace Module5
                 else
                 {
                     pagibig_deduct = 0.0255;
-                    double shw_pagibig = pagibig_deduct * 100;
-                    grosspay = basic_pay + otr_pay - oth_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * oth_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
                     output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Others";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 420;
-                        output_philhealth.Text = philhealth_deduct.ToString();
+                        shw_sss = grosspay * sss_deduciton;
+                        
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 290;
-                        output_philhealth.Text = philhealth_deduct.ToString();
+                        shw_sss = grosspay * sss_deduciton;
+                        
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
-                        double shw_sss = sss_deduciton * 100;
                         philhealth_deduct = 380;
-                        output_philhealth.Text = philhealth_deduct.ToString();
+                        shw_sss = grosspay * sss_deduciton;
+                        
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
                         output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
-
-                total_deduct = sss_deduciton + philhealth_deduct + pagibig_deduct + s_withholdingtax;
-                net_earnings = grosspay - total_deduct;
-                output_netrn.Text = net_earnings.ToString();
+                total_deduct = +shw_pagibig + shw_sss + philhealth_deduct + shw_witholdingtax;
                 output_ttldeduct.Text = total_deduct.ToString("0.00");
+                net_earnings = grosspay - total_deduct;
+                output_netrn.Text = net_earnings.ToString("0.00");
                 show_ES.Text = "Regular";
             }
+            
             else if (Employmentlist.SelectedValue == "P")
-            {
-                rate_perday = 420.30;
+              {
+                  rate_perday = 420.30;
                 rate_perhr = rate_perday / regular_hrswrk;
-                output_rph.Text = rate_perhr.ToString("0.00");
-                p_otr = rate_perhr * overtime_hr * regular_hrswrk;
+                reg_otr = rate_perhr * overtime_hr * regular_hrswrk;
                 basic_pay = hrswrk * rate_perhr;
+                output_rph.Text = rate_perhr.ToString("0.00");
                 output_bscpay.Text = basic_pay.ToString("0.00");
+
                 // Overtime
                 if (hrswrk > 120)
                 {
-                    otr_pay = p_otr * ot_hrs;
+                    otr_pay = reg_otr * ot_hrs;
                     output_otp.Text = otr_pay.ToString("0.00");
                 }
                 else
@@ -222,142 +242,186 @@ namespace Module5
                     otr_pay = 0;
                     output_otp.Text = otr_pay.ToString("0.00");
                 }
+                // Multiply SSS and pagibig then use minus in philhealth
                 if (Civillist.SelectedValue == "S")
                 {
                     pagibig_deduct = 0.0275;
-                    grosspay = (basic_pay * reg_workdays) + otr_pay * s_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * s_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Single";
+
+
                     // SSS Deduction and Philhealth
                     if (grosspay >= 12000.00)
                     {
-                        sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        sss_deduciton = 0.115;
+                        shw_sss = grosspay * sss_deduciton;
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
 
                 }
                 else if (Civillist.SelectedValue == "M")
                 {
                     pagibig_deduct = 0.0375;
-                    grosspay = basic_pay + otr_pay - m_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * m_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Married";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
 
                 }
                 else if (Civillist.SelectedValue == "W")
                 {
                     pagibig_deduct = 0.0255;
-                    grosspay = basic_pay + otr_pay - w_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * w_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Widow";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
                 else
                 {
                     pagibig_deduct = 0.0255;
-                    grosspay = basic_pay + otr_pay - oth_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * oth_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Others";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
-                total_deduct = sss_deduciton + philhealth_deduct + pagibig_deduct + s_withholdingtax;
-                net_earnings = grosspay - total_deduct;
-                output_netrn.Text = net_earnings.ToString();
+                total_deduct = +shw_pagibig + shw_sss + philhealth_deduct + shw_witholdingtax;
                 output_ttldeduct.Text = total_deduct.ToString("0.00");
+                net_earnings = grosspay - total_deduct;
+                output_netrn.Text = net_earnings.ToString("0.00");
                 show_ES.Text = "Probationary";
-            }
-            else if (Employmentlist.SelectedValue == "C")
-            {
-                rate_perday = 380.56;
+              }
+
+              else if (Employmentlist.SelectedValue == "C")
+              {
+                  rate_perday = 380.56;
                 rate_perhr = rate_perday / regular_hrswrk;
-                output_rph.Text = rate_perhr.ToString("0.00");
-                c_otr = rate_perhr * overtime_hr * regular_hrswrk;
+                reg_otr = rate_perhr * overtime_hr * regular_hrswrk;
                 basic_pay = hrswrk * rate_perhr;
+                output_rph.Text = rate_perhr.ToString("0.00");
                 output_bscpay.Text = basic_pay.ToString("0.00");
+
                 // Overtime
                 if (hrswrk > 120)
                 {
-                    otr_pay = c_otr * ot_hrs;
+                    otr_pay = reg_otr * ot_hrs;
                     output_otp.Text = otr_pay.ToString("0.00");
                 }
                 else
@@ -365,143 +429,186 @@ namespace Module5
                     otr_pay = 0;
                     output_otp.Text = otr_pay.ToString("0.00");
                 }
+                // Multiply SSS and pagibig then use minus in philhealth
                 if (Civillist.SelectedValue == "S")
                 {
                     pagibig_deduct = 0.0275;
-                    grosspay = (basic_pay * reg_workdays) + otr_pay * s_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * s_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString();
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Single";
+
+
                     // SSS Deduction and Philhealth
                     if (grosspay >= 12000.00)
                     {
-                        sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        sss_deduciton = 0.115;
+                        shw_sss = grosspay * sss_deduciton;
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
 
                 }
                 else if (Civillist.SelectedValue == "M")
                 {
                     pagibig_deduct = 0.0375;
-                    grosspay = basic_pay + otr_pay - m_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * m_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Married";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
 
                 }
                 else if (Civillist.SelectedValue == "W")
                 {
                     pagibig_deduct = 0.0255;
-                    grosspay = basic_pay + otr_pay - w_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * w_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Widow";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
                 else
                 {
                     pagibig_deduct = 0.0255;
-                    grosspay = basic_pay + otr_pay - oth_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * oth_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Others";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
-                total_deduct = sss_deduciton + philhealth_deduct + pagibig_deduct + s_withholdingtax;
+                total_deduct = +shw_pagibig + shw_sss + philhealth_deduct + shw_witholdingtax;
+                output_ttldeduct.Text = total_deduct.ToString("0.00");
                 net_earnings = grosspay - total_deduct;
-                output_netrn.Text = net_earnings.ToString();
-                output_ttldeduct.Text = total_deduct.ToString();
+                output_netrn.Text = net_earnings.ToString("0.00");
                 show_ES.Text = "Casual";
-            }
-            else if (Employmentlist.SelectedValue == "PT")
-            {
-                rate_perday = 300.10;
+              }
+
+              else if (Employmentlist.SelectedValue == "PT")
+              {
+                  rate_perday = 300.10;
                 rate_perhr = rate_perday / regular_hrswrk;
-                output_rph.Text = rate_perhr.ToString("0.00");
-                pt_otr = rate_perhr * overtime_hr * regular_hrswrk;
+                reg_otr = rate_perhr * overtime_hr * regular_hrswrk;
                 basic_pay = hrswrk * rate_perhr;
+                output_rph.Text = rate_perhr.ToString("0.00");
                 output_bscpay.Text = basic_pay.ToString("0.00");
+
                 // Overtime
                 if (hrswrk > 120)
                 {
-                    
-                    otr_pay = pt_otr * ot_hrs;
+                    otr_pay = reg_otr * ot_hrs;
                     output_otp.Text = otr_pay.ToString("0.00");
                 }
                 else
@@ -509,133 +616,175 @@ namespace Module5
                     otr_pay = 0;
                     output_otp.Text = otr_pay.ToString("0.00");
                 }
+                // Multiply SSS and pagibig then use minus in philhealth
                 if (Civillist.SelectedValue == "S")
                 {
                     pagibig_deduct = 0.0275;
-                    grosspay = (basic_pay * reg_workdays) + otr_pay * s_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * s_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Single";
+
+
                     // SSS Deduction and Philhealth
                     if (grosspay >= 12000.00)
                     {
-                        sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        sss_deduciton = 0.115;
+                        shw_sss = grosspay * sss_deduciton;
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
 
                 }
                 else if (Civillist.SelectedValue == "M")
                 {
                     pagibig_deduct = 0.0375;
-                    grosspay = basic_pay + otr_pay - m_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * m_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Married";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
 
                 }
                 else if (Civillist.SelectedValue == "W")
                 {
                     pagibig_deduct = 0.0255;
-                    grosspay = basic_pay + otr_pay - w_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * w_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Widow";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
+                        shw_sss = grosspay * sss_deduciton;
+
                         output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
                 else
                 {
                     pagibig_deduct = 0.0255;
-                    grosspay = basic_pay + otr_pay - oth_withholdingtax;
+                    grosspay = (basic_pay + otr_pay) * 2;
+                    shw_witholdingtax = grosspay * oth_withholdingtax;
+                    shw_pagibig = grosspay * pagibig_deduct;
+                    output_wthldngtax.Text = shw_witholdingtax.ToString("0.00");
                     output_grsserng.Text = grosspay.ToString("0.00");
-                    output_pagibig.Text = pagibig_deduct.ToString("0.00");
+                    output_pagibig.Text = shw_pagibig.ToString("0.00");
+                    show_CS.Text = "Others";
                     // SSS Deduction
                     if (grosspay >= 12000.00)
                     {
                         sss_deduciton = 0.115;
                         philhealth_deduct = 420;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else if (grosspay < 9500.00)
                     {
                         sss_deduciton = 0.0916;
                         philhealth_deduct = 290;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                     else
                     {
                         sss_deduciton = 0.105;
                         philhealth_deduct = 380;
-                        output_philhealth.Text = philhealth_deduct.ToString();
-                        output_sss.Text = sss_deduciton.ToString("0.00");
+                        shw_sss = grosspay * sss_deduciton;
+
+                        output_philhealth.Text = philhealth_deduct.ToString("0.00");
+                        output_sss.Text = shw_sss.ToString("0.00");
                     }
                 }
-                total_deduct = sss_deduciton + philhealth_deduct + pagibig_deduct + s_withholdingtax;
+                total_deduct = +shw_pagibig + shw_sss + philhealth_deduct + shw_witholdingtax;
+                output_ttldeduct.Text = total_deduct.ToString("0.00");
                 net_earnings = grosspay - total_deduct;
-                output_netrn.Text = net_earnings.ToString();
-                output_ttldeduct.Text = total_deduct.ToString();
+                output_netrn.Text = net_earnings.ToString("0.00");
                 show_ES.Text = "Part Timers";
-            }
-
+              }
+            
             // Output
-            output_fname.Text = fname + lname;
+            output_fname.Text = fname + "" + lname;
             output_hrswrk.Text = hrswrk.ToString();
             
 
