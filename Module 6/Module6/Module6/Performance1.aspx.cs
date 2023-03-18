@@ -91,7 +91,6 @@ namespace Module6
             }
 
             // Initiallize to check if the number is a Strong Number or Not
-
             int temp = get_int;
             sum = 0;
 
@@ -108,7 +107,7 @@ namespace Module6
                 sum += fact;
                 temp /= 10;
             }
-            if (sum == temp)
+            if (sum == get_int)
             {
                 out_strongnum.Text = get_int.ToString() + " is a Strong Number";
             }
@@ -117,7 +116,8 @@ namespace Module6
                 out_strongnum.Text = get_int.ToString() + " is not a Strong Number";
             }
 
-          
+           
+
             // Initiallize to check if the number is Factorial or Not
             int n = get_int;
           for (int i = 1; ; i++)
