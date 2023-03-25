@@ -1,0 +1,33 @@
+	    string str = "Hello World";
+            string s1 = "University ";
+            string s2 = "Technological";
+            
+
+            Response.Write("The length of the string is: "+ str.Length + "<br/>");
+            Response.Write("UpperCase " + str.ToUpper() + "<br/>");
+            Response.Write("LowerCase: " + str.ToLower() + "<br/>");
+            Response.Write("The new string: " + string.Concat("Cebu ", s1,s2) + "<br/>");
+            string str2 = string.Concat(s1, s2);
+            Response.Write(str2 + "<br/>");
+            for (int i = 0; i < str2.Length; i++) {
+                Response.Write("The character is in index [" + i + "] : " + str2[i] + "<br/>");
+            }
+
+            Response.Write("The new string is after using indexOf: " + str.IndexOf("l") + "<br/>");
+            string name = "John Wick, IV";
+            int pos = name.IndexOf("W");
+            Response.Write("Using substring method: "+ name.Substring(pos)+"<br/>");
+
+            string mess = (string.Equals(s1, s2)) ? "String are equal" : "String are not equal";
+            Response.Write("Comparing two strings" + mess + "<br/>");
+
+            str = "Hollywood";
+            Response.Write(str+"New String: "+ str.Replace('H','B')+"<br/>");
+            string str1 = "C# Programming";
+            Response.Write("From: "+str1+"<br/>New String: "+str1.Replace("Programming","Copy and Paste") + "<br/>");
+
+
+            str = "Hollywood";
+            Response.Write("From: "+str + "<br/>New String: " + str.Remove(5) + "<br/>");
+            str1 = "C# Programming";
+            Response.Write("From:"+ str1 + "<br/>New String: " + str1.Remove(4,3) + "<br/>");
