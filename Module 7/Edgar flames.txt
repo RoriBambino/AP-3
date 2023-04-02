@@ -1,0 +1,24 @@
+protected void btn_calculate_Click(object sender, EventArgs e)
+        {
+            string name = inputName.Text;
+            string crush = inputCrush.Text;
+            string[] relationshipStatus = {"Friends", "Lovers", "Admirer", " Marriage", "Enemies", "Secret Lovers"};
+            string status;
+            int remainLetters, index;
+            
+            foreach (char c in name)
+            {
+                if (crush.Contains(c.ToString()))
+                {
+                    name = name.Replace(c.ToString(), "");
+                    crush = crush.Replace(c.ToString(), "");
+                }
+            }
+
+            remainLetters = name.Length + crush.Length;
+            index = remainLetters % relationshipStatus.Length;
+            status = relationshipStatus[index];
+
+            labelAguroy.Text = "Your relationship: " + status;
+            }
+        }

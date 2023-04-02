@@ -18,7 +18,7 @@
         .auto-style3 {
             position: absolute;
             top: 67px;
-            left: 265px;
+            left: 202px;
             z-index: 1;
         }
         .auto-style4 {
@@ -36,8 +36,8 @@
             }
         .auto-style6 {
             position: absolute;
-            top: 101px;
-            left: 261px;
+            top: 100px;
+            left: 192px;
             z-index: 1;
         }
         .auto-style7 {
@@ -77,10 +77,10 @@
     <form id="form1" runat="server">
         <div class="auto-style1">
             <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="F.L.A.M.E.S"></asp:Label>
-            <asp:Label ID="Label2" runat="server" CssClass="auto-style3" Text="First Name:"></asp:Label>
+            <asp:Label ID="Label2" runat="server" CssClass="auto-style3" Text="Input Someone's Name:"></asp:Label>
             <asp:Button ID="Result" runat="server" CssClass="auto-style4" Text="Result" OnClick="Result_Click" />
             <asp:TextBox ID="f_username" runat="server" CssClass="auto-style5"></asp:TextBox>
-            <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Second Name: "></asp:Label>
+            <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Input Someone's Crush: "></asp:Label>
             <asp:TextBox ID="s_username" runat="server" CssClass="auto-style7"></asp:TextBox>
             <asp:Label ID="result_flames" runat="server" CssClass="auto-style8"></asp:Label>
             <asp:Label ID="Label4" runat="server" CssClass="auto-style9" Text="The Result of using F.L.A.M.E.S of:"></asp:Label>

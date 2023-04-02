@@ -20,33 +20,41 @@ namespace Module6
             String name1 = f_username.Text.ToUpper();
             String name2 = s_username.Text.ToUpper();
             int l = 1, string_count = 0, recursive_count = 0, fc = 5;
-            // Make the String to Array
-            char[] name1_char = name1.ToCharArray();
-            char[] name2_char = name2.ToCharArray();
+            // Make the String to Array   
             String flames_string = "flames";
             char[] flames_char = flames_string.ToCharArray();
-            int name1_len = name1.Length;
-            int name2_len = name2.Length;
-            int total_len = name1_len + name2_len;
-          
-          
+
+            // Removes the White Spaces in the String
+            string remove1, remove2;
+            remove1 = name1.Replace(" ", String.Empty);
+            remove2 = name2.Replace(" ", String.Empty);
+            // Turn Removed String to array Character
+            char[] name1_char = remove1.ToCharArray();
+            char[] name2_char = remove2.ToCharArray();
+
             result_name1.Text = name1;
             result_name2.Text = name2;
             // Checks if name1 and name2 have similar letters
-            for (int i = 0; i < name1_len; i++)
+            for (int i = 0; i < remove1.Length; i++)
             {
                 char a = name1_char[i];
-                for (int j = 0; j < name2_len; j++)
+                
+                for (int j = 0; j < remove2.Length; j++)
                 {
-                    
-                    if (a == name2_char[j])
-                    {                  
-                        name1_char[i] = name2_char[j] = '-';
+                   
+                    if (a == name2_char[j] )
+                    {
+                        name1 = name1.Replace(name1_char.ToString(), "");
+                        name2 = name2.Replace(name2_char.ToString(), "");
                         string_count += 2;
                         break;
                     } 
                 }
+                
             }
+            int name1_len = remove1.Length;           
+            int name2_len = remove2.Length;
+            int total_len = name1_len + name2_len;
             recursive_count = total_len - string_count;
             // Count the number of different letters then checks if the remaining letter of the word Flames
             int k = 0; 
@@ -54,7 +62,7 @@ namespace Module6
             {
                 if(l == recursive_count)
                 {
-                    for (int a = k; a < flames_string.Length - 1; a++)
+                    for (int a = k; a < flames_string.Length -1; a++)
                     {
                         flames_char[a] = flames_char[a + 1]; 
                     }

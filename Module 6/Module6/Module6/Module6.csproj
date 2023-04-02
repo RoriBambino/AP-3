@@ -126,6 +126,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Performance1.aspx" />
     <Content Include="Performance2.aspx" />
+    <Content Include="Module7Performance.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -223,6 +224,13 @@
     </Compile>
     <Compile Include="Performance2.aspx.designer.cs">
       <DependentUpon>Performance2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Module7Performance.aspx.cs">
+      <DependentUpon>Module7Performance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module7Performance.aspx.designer.cs">
+      <DependentUpon>Module7Performance.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
