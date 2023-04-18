@@ -7,11 +7,15 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            height: 1504px;
-            width: 1163px;
+            height: 1520px;
+            width: 1254px;
             margin-left: 0px;
-            margin-right: 31px;
+            margin-right: 0px;
             margin-top: 0px;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            z-index: 1;
         }
         .auto-style2 {
             position: absolute;
@@ -20,7 +24,7 @@
             z-index: 1;
         }
         .auto-style3 {
-            width: 971px;
+            width: 981px;
             height: 217px;
             position: absolute;
             top: 104px;
@@ -29,25 +33,25 @@
         }
         .auto-style6 {
             position: absolute;
-            top: 135px;
+            top: 134px;
             left: 100px;
             z-index: 1;
-            width: 171px;
+            width: 175px;
         }
         .auto-style7 {
             position: absolute;
             top: 134px;
-            left: 376px;
+            left: 379px;
             z-index: 1;
             width: 190px;
         }
         .auto-style8 {
             position: absolute;
             top: 134px;
-            left: 674px;
+            left: 684px;
             z-index: 1;
             width: 109px;
-            right: 142px;
+            right: 116px;
         }
         .auto-style9 {
             position: absolute;
@@ -59,14 +63,14 @@
         }
         .auto-style11 {
             position: absolute;
-            top: 166px;
-            left: 459px;
+            top: 167px;
+            left: 465px;
             z-index: 1;
             width: 223px;
         }
         .auto-style12 {
             position: absolute;
-            top: 196px;
+            top: 197px;
             left: 68px;
             z-index: 1;
             width: 200px;
@@ -139,8 +143,8 @@
             width: 201px;
         }
         .auto-style59 {
-            width: 967px;
-            height: 162px;
+            width: 966px;
+            height: 164px;
             position: absolute;
             top: 432px;
             left: 25px;
@@ -163,13 +167,6 @@
             z-index: 1;
             margin-bottom: 4px;
         }
-        .auto-style62 {
-            position: absolute;
-            top: 1429px;
-            left: 941px;
-            z-index: 1;
-            width: 138px;
-        }
         .auto-style63 {
             position: absolute;
             top: 318px;
@@ -183,27 +180,6 @@
             left: 472px;
             z-index: 1;
             width: 207px;
-        }
-        .auto-style65 {
-            position: absolute;
-            top: 476px;
-            left: 194px;
-            z-index: 1;
-            width: 171px;
-        }
-        .auto-style66 {
-            position: absolute;
-            top: 528px;
-            left: 139px;
-            z-index: 1;
-            width: 202px;
-        }
-        .auto-style67 {
-            position: absolute;
-            top: 578px;
-            left: 125px;
-            z-index: 1;
-            width: 146px;
         }
         .auto-style68 {
             position: absolute;
@@ -223,13 +199,6 @@
             left: 165px;
             z-index: 1;
             width: 289px;
-        }
-        .auto-style71 {
-            position: absolute;
-            top: 836px;
-            left: 790px;
-            z-index: 1;
-            width: 158px;
         }
         .auto-style72 {
             position: absolute;
@@ -368,14 +337,14 @@
         }
         .auto-style104 {
             position: absolute;
-            top: 478px;
-            left: 386px;
+            top: 473px;
+            left: 390px;
             z-index: 1;
         }
         .auto-style105 {
             position: absolute;
             top: 528px;
-            left: 371px;
+            left: 381px;
             z-index: 1;
         }
         .auto-style106 {
@@ -405,7 +374,7 @@
         .auto-style123 {
             position: absolute;
             top: 136px;
-            left: 676px;
+            left: 688px;
             z-index: 1;
         }
         .auto-style124 {
@@ -422,14 +391,14 @@
         }
         .auto-style126 {
             position: absolute;
-            top: 163px;
-            left: 690px;
+            top: 165px;
+            left: 697px;
             z-index: 1;
         }
         .auto-style127 {
             position: absolute;
-            top: 196px;
-            left: 135px;
+            top: 197px;
+            left: 134px;
             z-index: 1;
         }
         .auto-style128 {
@@ -572,8 +541,8 @@
         }
         .auto-style151 {
             position: absolute;
-            top: 499px;
-            left: 216px;
+            top: 498px;
+            left: 204px;
             z-index: 1;
         }
         .auto-style152 {
@@ -584,8 +553,8 @@
         }
         .auto-style153 {
             position: absolute;
-            top: 599px;
-            left: 136px;
+            top: 600px;
+            left: 143px;
             z-index: 1;
         }
         .auto-style154 {
@@ -594,11 +563,46 @@
             left: 780px;
             z-index: 1;
         }
+        .auto-style156 {
+            position: absolute;
+            top: 1462px;
+            left: 526px;
+            z-index: 1;
+        }
+        .auto-style160 {
+            position: absolute;
+            top: 472px;
+            left: 175px;
+            z-index: 1;
+            width: 198px;
+        }
+        .auto-style161 {
+            position: absolute;
+            top: 525px;
+            left: 146px;
+            z-index: 1;
+            width: 221px;
+            margin-top: 0px;
+        }
+        .auto-style162 {
+            position: absolute;
+            top: 579px;
+            left: 133px;
+            z-index: 1;
+            width: 143px;
+        }
+        .auto-style163 {
+            position: absolute;
+            top: 833px;
+            left: 781px;
+            z-index: 1;
+            width: 168px;
+        }
     </style>
 </head>
-<body>
+<body style="height: 1505px; width: 1242px; margin-left: 0px; margin-top: 21px; margin-bottom: 3px;">
     <form id="form1" runat="server">
-        <div class="auto-style1" style="background-color: #8FC8E9">
+        <div class="auto-style1" style="background-color: #12DAAD; ">
             <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Font-Bold="True" Font-Size="Larger" Text="Personal Information Form Entry"></asp:Label>
             <asp:Table ID="Table1" runat="server" CssClass="auto-style3" Caption="Applicant Information" CaptionAlign="Left" Font-Size="Medium">
                 <asp:TableRow runat="server">
@@ -640,9 +644,9 @@
                 </asp:TableRow>
                 
             </asp:Table>
-            <asp:TextBox ID="lname" runat="server" BorderStyle="None" CssClass="auto-style6" BackColor="White"></asp:TextBox>
-            <asp:TextBox ID="fname" runat="server" BorderStyle="None" CssClass="auto-style7"></asp:TextBox>
-            <asp:TextBox ID="midname" runat="server" BorderStyle="None" CssClass="auto-style8"></asp:TextBox>
+            <asp:TextBox ID="txtlname" runat="server" BorderStyle="None" CssClass="auto-style6" BackColor="White"></asp:TextBox>
+            <asp:TextBox ID="txtfname" runat="server" BorderStyle="None" CssClass="auto-style7"></asp:TextBox>
+            <asp:TextBox ID="txtmidname" runat="server" BorderStyle="None" CssClass="auto-style8"></asp:TextBox>
             <asp:TextBox ID="dob" runat="server" BorderStyle="None" CssClass="auto-style9"></asp:TextBox>
             <asp:TextBox ID="appartment_add" runat="server" BorderStyle="None" CssClass="auto-style11"></asp:TextBox>
             <asp:TextBox ID="city" runat="server" BorderStyle="None" CssClass="auto-style12"></asp:TextBox>
@@ -656,7 +660,7 @@
             </asp:DropDownList>
             <asp:RadioButton ID="RadioButton1" runat="server" CssClass="auto-style17" Text="Male" GroupName ="Sex" />
             <asp:RadioButton ID="RadioButton2" runat="server" CssClass="auto-style18" Text="Female" GroupName="Sex" />
-            <asp:TextBox ID="post_code" runat="server" BorderStyle="None" CssClass="auto-style19" OnTextChanged="TextBox11_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="post_code" runat="server" BorderStyle="None" CssClass="auto-style19" ></asp:TextBox>
             <asp:TextBox ID="national_id" runat="server" BorderStyle="None" CssClass="auto-style20"></asp:TextBox>
             <br />
             <asp:TextBox ID="nationality" runat="server" BorderStyle="None" CssClass="auto-style54"></asp:TextBox>
@@ -669,9 +673,9 @@
             <br />
             <asp:TextBox ID="occupation" runat="server" CssClass="auto-style63" BorderStyle="None"></asp:TextBox>
             <asp:RangeValidator ID="RangeValidator9" runat="server" ControlToValidate="post_code" CssClass="auto-style98" ErrorMessage="Input Post Code" MaximumValue="9999999999" MinimumValue="0000000000" Type="Double"></asp:RangeValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="lname" CssClass="auto-style121" ErrorMessage="Input Last Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="fname" CssClass="auto-style122" ErrorMessage="Input First Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="midname" CssClass="auto-style123" ErrorMessage="Input Middle Name!" Font-Size="Small"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtlname" CssClass="auto-style121" ErrorMessage="Input Last Name!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtfname" CssClass="auto-style122" ErrorMessage="Input First Name!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtmidname" CssClass="auto-style123" ErrorMessage="Input Middle Name!" Font-Size="Small"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="dob" CssClass="auto-style124" ErrorMessage="Input Date of Birth!"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="street_add" CssClass="auto-style125" ErrorMessage="Input Street Address!"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="appartment_add" CssClass="auto-style126" ErrorMessage="Input Appartment/Unit!"></asp:RequiredFieldValidator>
@@ -696,15 +700,15 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="nationality" CssClass="auto-style130" ErrorMessage="Input Nationality!"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="occupation" CssClass="auto-style131" ErrorMessage="Input Occupation!"></asp:RequiredFieldValidator>
             <br />
-            <asp:TextBox ID="home_num" runat="server" CssClass="auto-style66" MaxLength="8"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="highest_edu" CssClass="auto-style132" ErrorMessage="Input Highest Eduation!"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="national_id" CssClass="auto-style150" ErrorMessage="Input National ID/Passport ID"></asp:RequiredFieldValidator>
             <br />
+            <asp:TextBox ID="mobile_num" runat="server" CssClass="auto-style160"></asp:TextBox>
             <br />
-            <asp:TextBox ID="mobile_num" runat="server" CssClass="auto-style65" MaxLength="11"></asp:TextBox>
-            <asp:TextBox ID="work_num" runat="server" CssClass="auto-style67" MaxLength="11"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator31" runat="server" ControlToValidate="mobile_num" CssClass="auto-style151" ErrorMessage="Input Mobile Number!"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="work_num" runat="server" CssClass="auto-style162"></asp:TextBox>
             <br />
+            <asp:TextBox ID="home_num" runat="server" CssClass="auto-style161"></asp:TextBox>
             <asp:Table ID="Table4" runat="server" Caption="Contact Information" CssClass="auto-style59" CaptionAlign="Left">
                 <asp:TableRow runat="server">
                     <asp:TableCell runat="server" Height="20px">Mobile Phone Number</asp:TableCell>
@@ -732,7 +736,6 @@
             <br />
             <asp:RangeValidator ID="RangeValidator15" runat="server" ControlToValidate="mobile_num" CssClass="auto-style104" ErrorMessage="Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000" Type="Double"></asp:RangeValidator>
             <br />
-            <asp:TextBox ID="yr_emp" runat="server" CssClass="auto-style71" BorderStyle="None"></asp:TextBox>
             <asp:RangeValidator ID="RangeValidator16" runat="server" ControlToValidate="home_num" CssClass="auto-style105" ErrorMessage="Invalid Number!" MaximumValue="99999999" MinimumValue="00000000" Type="Double"></asp:RangeValidator>
             <br />
             <asp:TextBox ID="emp_add" runat="server" CssClass="auto-style72" BorderStyle="None"></asp:TextBox>
@@ -786,6 +789,7 @@
             <br />
             <br />
             <br />
+            <asp:TextBox ID="yr_emp" runat="server" CssClass="auto-style163"></asp:TextBox>
             <br />
             <br />
             <br />
@@ -842,7 +846,7 @@
             <br />
             <br />
             <asp:TextBox ID="dep_name" runat="server" CssClass="auto-style81"></asp:TextBox>
-            <asp:TextBox ID="relation1" runat="server" CssClass="auto-style82" OnTextChanged="relation1_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="relation1" runat="server" CssClass="auto-style82"></asp:TextBox>
             <asp:TextBox ID="bday1" runat="server" CssClass="auto-style83"></asp:TextBox>
             <asp:TextBox ID="dep1_name" runat="server" CssClass="auto-style84"></asp:TextBox>
             <asp:TextBox ID="dep2_name" runat="server" CssClass="auto-style85"></asp:TextBox>
@@ -876,7 +880,7 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="relation3" CssClass="auto-style146" ErrorMessage="Input Relationship!"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="bday1" CssClass="auto-style147" ErrorMessage="Input Birthday!"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="bday3" CssClass="auto-style149" ErrorMessage="Input Birthday!"></asp:RequiredFieldValidator>
-            <asp:Button ID="Button1" runat="server" CssClass="auto-style62" Text="Submit" Font-Bold="True" />
+            <asp:Button ID="out_btn" runat="server" CssClass="auto-style156" OnClick="out_btn_Click" Text="Submit" />
         </div>
     </form>
 </body>

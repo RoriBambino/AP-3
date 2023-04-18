@@ -106,6 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\personaldata.mdf" />
+    <Content Include="App_Data\personaldata_log.ldf">
+      <DependentUpon>personaldata.mdf</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -125,6 +129,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="PersonalInfoEntry.aspx" />
+    <Content Include="PersonalInfoentry2.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -216,10 +221,15 @@
     <Compile Include="PersonalInfoEntry.aspx.designer.cs">
       <DependentUpon>PersonalInfoEntry.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PersonalInfoentry2.aspx.cs">
+      <DependentUpon>PersonalInfoentry2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonalInfoentry2.aspx.designer.cs">
+      <DependentUpon>PersonalInfoentry2.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
