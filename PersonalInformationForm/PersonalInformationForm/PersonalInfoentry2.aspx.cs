@@ -14,14 +14,13 @@ namespace PersonalInformationForm
            
         }
 
-        
-        protected void Button1_Click1(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             string get_lname = lname.Text;
             string get_fname = fname.Text;
             string get_midname = middle_name.Text;
 
-            output.Text = lname.ToString();
+            get_output.Text = get_lname + " " + get_fname + " " + get_midname;
         }
     }
 }

@@ -396,7 +396,7 @@
         .auto-style63 {
             position: absolute;
             top: 535px;
-            left: 195px;
+            left: 194px;
             z-index: 1;
             width: 321px;
         }
@@ -796,18 +796,18 @@
         <br />
         <asp:Label ID="Label22" runat="server" CssClass="auto-style55" Text="Mobile Phone Number"></asp:Label>
         <asp:TextBox ID="m_number" runat="server" CssClass="auto-style56"></asp:TextBox>
-        <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="m_number" CssClass="auto-style57" ErrorMessage="*Must be 11 Digits" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
+        <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="m_number" CssClass="auto-style57" ErrorMessage="*Must be 11 Digits" Font-Size="Small" ForeColor="Red" MaximumValue="99999999999" MinimumValue="00000000000"></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="home_number" CssClass="auto-style61" ErrorMessage="*Input Home Number" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Label23" runat="server" CssClass="auto-style58" Text="Home Number"></asp:Label>
-        <asp:RangeValidator ID="RangeValidator3" runat="server" ControlToValidate="home_number" CssClass="auto-style61" ErrorMessage="*Must be 8 Digit Number" Font-Size="Small" ForeColor="Red" MaximumValue="99999999"></asp:RangeValidator>
+        <asp:RangeValidator ID="RangeValidator3" runat="server" ControlToValidate="home_number" CssClass="auto-style61" ErrorMessage="*Must be 8 Digit Number" Font-Size="Small" ForeColor="Red" MaximumValue="99999999" MinimumValue="00000000"></asp:RangeValidator>
         <asp:Label ID="Label27" runat="server" CssClass="auto-style69" Text="Employment Status"></asp:Label>
         <br />
         <br />
         <br />
         <asp:Label ID="Label24" runat="server" CssClass="auto-style62" Text="Work Number"></asp:Label>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="work_num" CssClass="auto-style64" ErrorMessage="*Input Work Number" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
-        <asp:RangeValidator ID="RangeValidator4" runat="server" ControlToValidate="work_num" CssClass="auto-style65" ErrorMessage="*Must be 11 digits or 8" Font-Size="Small" ForeColor="Red" MaximumValue="99999999999"></asp:RangeValidator>
+        <asp:RangeValidator ID="RangeValidator4" runat="server" ControlToValidate="work_num" CssClass="auto-style65" ErrorMessage="*Must be 11 digits or 8" Font-Size="Small" ForeColor="Red" MaximumValue="99999999999" MinimumValue="00000000000"></asp:RangeValidator>
         <asp:DropDownList ID="DropDownList3" runat="server" CssClass="auto-style70">
             <asp:ListItem>Employment Status</asp:ListItem>
             <asp:ListItem>Employed</asp:ListItem>
@@ -854,7 +854,7 @@
         <asp:Label ID="Label33" runat="server" CssClass="auto-style85" Text="Years of Business"></asp:Label>
         <asp:TextBox ID="years_of_bus" runat="server" CssClass="auto-style86"></asp:TextBox>
         <asp:Label ID="Label34" runat="server" CssClass="auto-style87" Text="Business Address"></asp:Label>
-        <asp:RangeValidator ID="RangeValidator5" runat="server" ControlToValidate="tel_no" CssClass="auto-style93" ErrorMessage="*Must be 11 Digits" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
+        <asp:RangeValidator ID="RangeValidator5" runat="server" ControlToValidate="tel_no" CssClass="auto-style93" ErrorMessage="*Must be 11 Digits" Font-Size="Small" ForeColor="Red" MaximumValue="99999999999" MinimumValue="00000000000"></asp:RangeValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="bus_add" CssClass="auto-style89" ErrorMessage="*Input Business Address" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:Label ID="Label35" runat="server" CssClass="auto-style90" Text="Telephone No."></asp:Label>
         <asp:TextBox ID="tel_no" runat="server" CssClass="auto-style91"></asp:TextBox>
@@ -874,7 +874,7 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator24" runat="server" ControlToValidate="mother_fname" CssClass="auto-style101" ErrorMessage="*Input First Name" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:Label ID="Label40" runat="server" CssClass="auto-style102" Text="Middle Name"></asp:Label>
         <asp:TextBox ID="mother_midname" runat="server" CssClass="auto-style103"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator25" runat="server" CssClass="auto-style104" ErrorMessage="*Input Middle Name" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator25" runat="server" CssClass="auto-style104" ErrorMessage="*Input Middle Name" Font-Size="Small" ForeColor="Red" ControlToValidate="mother_midname"></asp:RequiredFieldValidator>
         <asp:Label ID="Label41" runat="server" CssClass="auto-style105" Font-Size="Large" Text="Dependents"></asp:Label>
         <asp:Label ID="Label42" runat="server" CssClass="auto-style106" Text="Name"></asp:Label>
         <asp:TextBox ID="dep_name1" runat="server" CssClass="auto-style107"></asp:TextBox>
@@ -882,6 +882,18 @@
         <asp:Label ID="Label43" runat="server" CssClass="auto-style109" Text="Relationship"></asp:Label>
         <asp:TextBox ID="relation1" runat="server" CssClass="auto-style110"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="relation1" CssClass="auto-style111" ErrorMessage="*Input Relation" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
     </form>
     <p>
         &nbsp;</p>
