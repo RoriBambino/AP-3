@@ -25,7 +25,7 @@
         }
         .auto-style3 {
             width: 981px;
-            height: 217px;
+            height: 268px;
             position: absolute;
             top: 104px;
             left: 22px;
@@ -33,44 +33,44 @@
         }
         .auto-style6 {
             position: absolute;
-            top: 134px;
+            top: 138px;
             left: 100px;
             z-index: 1;
             width: 175px;
         }
         .auto-style7 {
             position: absolute;
-            top: 134px;
+            top: 138px;
             left: 379px;
             z-index: 1;
             width: 190px;
         }
         .auto-style8 {
             position: absolute;
-            top: 134px;
+            top: 139px;
             left: 684px;
             z-index: 1;
             width: 109px;
-            right: 116px;
+            right: 457px;
         }
         .auto-style9 {
             position: absolute;
-            top: 135px;
+            top: 138px;
             left: 885px;
             z-index: 1;
             width: 84px;
-            right: 46px;
+            right: 281px;
         }
         .auto-style11 {
             position: absolute;
-            top: 167px;
-            left: 465px;
+            top: 176px;
+            left: 467px;
             z-index: 1;
             width: 223px;
         }
         .auto-style12 {
             position: absolute;
-            top: 197px;
+            top: 214px;
             left: 68px;
             z-index: 1;
             width: 200px;
@@ -78,53 +78,53 @@
         }
         .auto-style13 {
             position: absolute;
-            top: 196px;
-            left: 404px;
+            top: 213px;
+            left: 409px;
             z-index: 1;
             width: 135px;
         }
         .auto-style16 {
             position: absolute;
-            top: 225px;
-            left: 140px;
+            top: 250px;
+            left: 129px;
             z-index: 1;
         }
         .auto-style17 {
             position: absolute;
-            top: 227px;
-            left: 375px;
+            top: 252px;
+            left: 382px;
             z-index: 1;
         }
         .auto-style18 {
             position: absolute;
-            top: 226px;
+            top: 251px;
             left: 460px;
             z-index: 1;
         }
         .auto-style19 {
             position: absolute;
-            top: 196px;
-            left: 708px;
+            top: 214px;
+            left: 709px;
             z-index: 1;
             width: 252px;
         }
         .auto-style20 {
             position: absolute;
-            top: 290px;
+            top: 328px;
             left: 162px;
             z-index: 1;
             width: 341px;
         }
         .auto-style45 {
             position: absolute;
-            top: 165px;
-            left: 130px;
+            top: 176px;
+            left: 129px;
             z-index: 1;
-            width: 163px;
+            width: 167px;
         }
         .auto-style54 {
             position: absolute;
-            top: 258px;
+            top: 290px;
             left: 425px;
             z-index: 1;
             width: 198px;
@@ -137,24 +137,24 @@
         }
         .auto-style56 {
             position: absolute;
-            top: 256px;
-            left: 97px;
+            top: 291px;
+            left: 102px;
             z-index: 1;
             width: 201px;
         }
         .auto-style59 {
-            width: 966px;
-            height: 164px;
+            width: 972px;
+            height: 202px;
             position: absolute;
-            top: 432px;
+            top: 439px;
             left: 25px;
             z-index: 1;
         }
         .auto-style60 {
-            width: 957px;
+            width: 1111px;
             height: 319px;
             position: absolute;
-            top: 707px;
+            top: 708px;
             left: 34px;
             z-index: 1;
         }
@@ -163,20 +163,20 @@
             height: 245px;
             position: absolute;
             top: 1126px;
-            left: 31px;
+            left: 30px;
             z-index: 1;
             margin-bottom: 4px;
         }
         .auto-style63 {
             position: absolute;
-            top: 318px;
+            top: 367px;
             left: 109px;
             z-index: 1;
             width: 194px;
         }
         .auto-style64 {
             position: absolute;
-            top: 321px;
+            top: 366px;
             left: 472px;
             z-index: 1;
             width: 207px;
@@ -200,45 +200,38 @@
             z-index: 1;
             width: 289px;
         }
-        .auto-style72 {
-            position: absolute;
-            top: 881px;
-            left: 180px;
-            z-index: 1;
-            width: 556px;
-        }
         .auto-style73 {
             position: absolute;
-            top: 923px;
+            top: 927px;
             left: 146px;
             z-index: 1;
             width: 596px;
         }
         .auto-style74 {
             position: absolute;
-            top: 970px;
+            top: 971px;
             left: 282px;
             z-index: 1;
             width: 300px;
         }
         .auto-style75 {
             position: absolute;
-            top: 969px;
-            left: 770px;
+            top: 974px;
+            left: 866px;
             z-index: 1;
             width: 199px;
         }
         .auto-style76 {
             position: absolute;
-            top: 1013px;
+            top: 1018px;
             left: 166px;
             z-index: 1;
             width: 418px;
         }
         .auto-style77 {
             position: absolute;
-            top: 1013px;
-            left: 752px;
+            top: 1019px;
+            left: 849px;
             z-index: 1;
             width: 214px;
         }
@@ -325,32 +318,32 @@
         }
         .auto-style98 {
             position: absolute;
-            top: 196px;
+            top: 230px;
             left: 789px;
             z-index: 1;
         }
         .auto-style101 {
             position: absolute;
-            top: 289px;
+            top: 329px;
             left: 516px;
             z-index: 1;
         }
         .auto-style104 {
             position: absolute;
-            top: 473px;
+            top: 487px;
             left: 390px;
             z-index: 1;
         }
         .auto-style105 {
             position: absolute;
-            top: 528px;
-            left: 381px;
+            top: 554px;
+            left: 377px;
             z-index: 1;
         }
         .auto-style106 {
             position: absolute;
-            top: 580px;
-            left: 290px;
+            top: 625px;
+            left: 363px;
             z-index: 1;
         }
         .auto-style112 {
@@ -361,79 +354,83 @@
         }
         .auto-style121 {
             position: absolute;
-            top: 135px;
-            left: 130px;
+            top: 153px;
+            left: 135px;
             z-index: 1;
+            font-size: small;
+            right: 1020px;
         }
         .auto-style122 {
             position: absolute;
-            top: 134px;
-            left: 414px;
+            top: 153px;
+            left: 422px;
             z-index: 1;
+            height: 19px;
+            font-size: small;
         }
         .auto-style123 {
             position: absolute;
-            top: 136px;
-            left: 688px;
+            top: 157px;
+            left: 689px;
             z-index: 1;
         }
         .auto-style124 {
             position: absolute;
-            top: 157px;
-            left: 870px;
+            top: 156px;
+            left: 877px;
             z-index: 1;
         }
         .auto-style125 {
             position: absolute;
-            top: 166px;
-            left: 143px;
+            top: 192px;
+            left: 147px;
             z-index: 1;
         }
         .auto-style126 {
             position: absolute;
-            top: 165px;
-            left: 697px;
+            top: 193px;
+            left: 508px;
             z-index: 1;
         }
         .auto-style127 {
             position: absolute;
-            top: 197px;
+            top: 229px;
             left: 134px;
             z-index: 1;
         }
         .auto-style128 {
             position: absolute;
-            top: 195px;
+            top: 228px;
             left: 428px;
             z-index: 1;
         }
         .auto-style129 {
             position: absolute;
-            top: 256px;
+            top: 306px;
             left: 142px;
             z-index: 1;
         }
         .auto-style130 {
             position: absolute;
-            top: 258px;
+            top: 291px;
             left: 636px;
             z-index: 1;
         }
         .auto-style131 {
             position: absolute;
-            top: 341px;
-            left: 152px;
+            top: 383px;
+            left: 153px;
             z-index: 1;
         }
         .auto-style132 {
             position: absolute;
-            top: 343px;
-            left: 508px;
+            top: 383px;
+            left: 500px;
             z-index: 1;
         }
         .auto-style133 {
             position: absolute;
-            top: 837px;
+            top: 839px;
             left: 468px;
             z-index: 1;
         }
@@ -445,61 +442,61 @@
         }
         .auto-style135 {
             position: absolute;
-            top: 880px;
+            top: 883px;
             left: 755px;
             z-index: 1;
         }
         .auto-style136 {
             position: absolute;
-            top: 923px;
+            top: 928px;
             left: 756px;
             z-index: 1;
         }
         .auto-style137 {
             position: absolute;
-            top: 1033px;
+            top: 1035px;
             left: 289px;
             z-index: 1;
         }
         .auto-style138 {
             position: absolute;
-            top: 1234px;
-            left: 210px;
+            top: 1232px;
+            left: 243px;
             z-index: 1;
         }
         .auto-style139 {
             position: absolute;
-            top: 1228px;
-            left: 653px;
+            top: 1229px;
+            left: 654px;
             z-index: 1;
         }
         .auto-style140 {
             position: absolute;
             top: 1227px;
-            left: 884px;
+            left: 888px;
             z-index: 1;
         }
         .auto-style141 {
             position: absolute;
-            top: 1311px;
+            top: 1313px;
             left: 227px;
             z-index: 1;
         }
         .auto-style142 {
             position: absolute;
-            top: 1347px;
+            top: 1349px;
             left: 226px;
             z-index: 1;
         }
         .auto-style143 {
             position: absolute;
             top: 1387px;
-            left: 228px;
+            left: 229px;
             z-index: 1;
         }
         .auto-style144 {
             position: absolute;
-            top: 1310px;
+            top: 1311px;
             left: 652px;
             z-index: 1;
         }
@@ -535,27 +532,28 @@
         }
         .auto-style150 {
             position: absolute;
-            top: 289px;
+            top: 329px;
             left: 514px;
             z-index: 1;
         }
         .auto-style151 {
             position: absolute;
-            top: 498px;
-            left: 204px;
+            top: 506px;
+            left: 222px;
             z-index: 1;
         }
         .auto-style152 {
             position: absolute;
-            top: 550px;
-            left: 174px;
+            top: 571px;
+            left: 198px;
             z-index: 1;
         }
         .auto-style153 {
             position: absolute;
-            top: 600px;
-            left: 143px;
+            top: 642px;
+            left: 177px;
             z-index: 1;
+            margin-bottom: 0px;
         }
         .auto-style154 {
             position: absolute;
@@ -569,40 +567,46 @@
             left: 526px;
             z-index: 1;
         }
-        .auto-style160 {
-            position: absolute;
-            top: 472px;
-            left: 175px;
-            z-index: 1;
-            width: 198px;
-        }
-        .auto-style161 {
-            position: absolute;
-            top: 525px;
-            left: 146px;
-            z-index: 1;
-            width: 221px;
-            margin-top: 0px;
-        }
-        .auto-style162 {
-            position: absolute;
-            top: 579px;
-            left: 133px;
-            z-index: 1;
-            width: 143px;
-        }
         .auto-style163 {
             position: absolute;
             top: 833px;
-            left: 781px;
+            left: 885px;
             z-index: 1;
             width: 168px;
+        }
+        .auto-style164 {
+            position: absolute;
+            top: 485px;
+            left: 185px;
+            z-index: 1;
+            width: 191px;
+        }
+        .auto-style165 {
+            position: absolute;
+            top: 552px;
+            left: 146px;
+            z-index: 1;
+            width: 218px;
+        }
+        .auto-style166 {
+            position: absolute;
+            top: 621px;
+            left: 129px;
+            z-index: 1;
+            width: 212px;
+        }
+        .auto-style167 {
+            position: absolute;
+            top: 879px;
+            left: 181px;
+            z-index: 1;
+            width: 548px;
         }
     </style>
 </head>
 <body style="height: 1505px; width: 1242px; margin-left: 0px; margin-top: 21px; margin-bottom: 3px;">
     <form id="form1" runat="server">
-        <div class="auto-style1" style="background-color: #12DAAD; ">
+        <div class="auto-style1" style="background-color: #C0C0C0; ">
             <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Font-Bold="True" Font-Size="Larger" Text="Personal Information Form Entry"></asp:Label>
             <asp:Table ID="Table1" runat="server" CssClass="auto-style3" Caption="Applicant Information" CaptionAlign="Left" Font-Size="Medium">
                 <asp:TableRow runat="server">
@@ -672,16 +676,16 @@
             <asp:TextBox ID="highest_edu" runat="server" CssClass="auto-style64" BorderStyle="None"></asp:TextBox>
             <br />
             <asp:TextBox ID="occupation" runat="server" CssClass="auto-style63" BorderStyle="None"></asp:TextBox>
-            <asp:RangeValidator ID="RangeValidator9" runat="server" ControlToValidate="post_code" CssClass="auto-style98" ErrorMessage="Input Post Code" MaximumValue="9999999999" MinimumValue="0000000000" Type="Double"></asp:RangeValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtlname" CssClass="auto-style121" ErrorMessage="Input Last Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtfname" CssClass="auto-style122" ErrorMessage="Input First Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtmidname" CssClass="auto-style123" ErrorMessage="Input Middle Name!" Font-Size="Small"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="dob" CssClass="auto-style124" ErrorMessage="Input Date of Birth!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="street_add" CssClass="auto-style125" ErrorMessage="Input Street Address!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="appartment_add" CssClass="auto-style126" ErrorMessage="Input Appartment/Unit!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="city" CssClass="auto-style127" ErrorMessage="Input City!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="province" CssClass="auto-style128" ErrorMessage="Input Province!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="citizenship" CssClass="auto-style129" ErrorMessage="Input Citizenship!"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="RangeValidator9" runat="server" ControlToValidate="post_code" CssClass="auto-style98" ErrorMessage="*Input Post Code" MaximumValue="9999999999" MinimumValue="0000000000" Type="Double" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtlname" CssClass="auto-style121" ErrorMessage="*Input Last Name!" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtfname" CssClass="auto-style122" ErrorMessage="*Input First Name!" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtmidname" CssClass="auto-style123" ErrorMessage="*Input Middle Name!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="dob" CssClass="auto-style124" ErrorMessage="Input Date of Birth!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="street_add" CssClass="auto-style125" ErrorMessage="*Input Street Address!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="appartment_add" CssClass="auto-style126" ErrorMessage="*Input Appartment/Unit!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="city" CssClass="auto-style127" ErrorMessage="*Input City!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="province" CssClass="auto-style128" ErrorMessage="*Input Province!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="citizenship" CssClass="auto-style129" ErrorMessage="*Input Citizenship!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
             <br />
@@ -696,19 +700,16 @@
             <br />
             <br />
             <br />
-            <asp:RangeValidator ID="RangeValidator12" runat="server" ControlToValidate="national_id" CssClass="auto-style101" ErrorMessage="Must be 12 Digits max" MaximumValue="999999999999" MinimumValue="111111111111" Type="Double"></asp:RangeValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="nationality" CssClass="auto-style130" ErrorMessage="Input Nationality!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="occupation" CssClass="auto-style131" ErrorMessage="Input Occupation!"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="RangeValidator12" runat="server" ControlToValidate="national_id" CssClass="auto-style101" ErrorMessage="*Must be 12 Digits max" MaximumValue="999999999999" MinimumValue="111111111111" Type="Double" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="nationality" CssClass="auto-style130" ErrorMessage="*Input Nationality!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="occupation" CssClass="auto-style131" ErrorMessage="*Input Occupation!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="highest_edu" CssClass="auto-style132" ErrorMessage="Input Highest Eduation!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="national_id" CssClass="auto-style150" ErrorMessage="Input National ID/Passport ID"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="highest_edu" CssClass="auto-style132" ErrorMessage="*Input Highest Eduation!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="national_id" CssClass="auto-style150" ErrorMessage="*Input National ID/Passport ID" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-            <asp:TextBox ID="mobile_num" runat="server" CssClass="auto-style160"></asp:TextBox>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator31" runat="server" ControlToValidate="mobile_num" CssClass="auto-style151" ErrorMessage="Input Mobile Number!"></asp:RequiredFieldValidator>
-            <asp:TextBox ID="work_num" runat="server" CssClass="auto-style162"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator31" runat="server" ControlToValidate="mobile" CssClass="auto-style151" ErrorMessage="*Input Mobile Number!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-            <asp:TextBox ID="home_num" runat="server" CssClass="auto-style161"></asp:TextBox>
             <asp:Table ID="Table4" runat="server" Caption="Contact Information" CssClass="auto-style59" CaptionAlign="Left">
                 <asp:TableRow runat="server">
                     <asp:TableCell runat="server" Height="20px">Mobile Phone Number</asp:TableCell>
@@ -721,26 +722,28 @@
                 </asp:TableRow>
             </asp:Table>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator33" runat="server" ControlToValidate="home_num" CssClass="auto-style153" ErrorMessage="Input Home Number!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator33" runat="server" ControlToValidate="home" CssClass="auto-style153" ErrorMessage="*Input Home Number!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator32" runat="server" ControlToValidate="home_num" CssClass="auto-style152" ErrorMessage="Input Home Number!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator32" runat="server" ControlToValidate="home" CssClass="auto-style152" ErrorMessage="*Input Home Number!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
             <br />
             <br />
             <br />
             <br />
-            <asp:RangeValidator ID="RangeValidator17" runat="server" ControlToValidate="work_num" CssClass="auto-style106" ErrorMessage="Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000" Type="Double"></asp:RangeValidator>
+            <asp:RangeValidator ID="RangeValidator17" runat="server" ControlToValidate="work" CssClass="auto-style106" ErrorMessage="*Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000" Type="Double" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
             <br />
-            <asp:RangeValidator ID="RangeValidator15" runat="server" ControlToValidate="mobile_num" CssClass="auto-style104" ErrorMessage="Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000" Type="Double"></asp:RangeValidator>
+            <asp:RangeValidator ID="RangeValidator15" runat="server" ControlToValidate="mobile" CssClass="auto-style104" ErrorMessage="*Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000" Type="Double" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
             <br />
-            <asp:RangeValidator ID="RangeValidator16" runat="server" ControlToValidate="home_num" CssClass="auto-style105" ErrorMessage="Invalid Number!" MaximumValue="99999999" MinimumValue="00000000" Type="Double"></asp:RangeValidator>
+            <asp:RangeValidator ID="RangeValidator16" runat="server" ControlToValidate="home" CssClass="auto-style105" ErrorMessage="*Invalid Number!" MaximumValue="99999999" MinimumValue="00000000" Type="Double" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
+            <asp:TextBox ID="home" runat="server" CssClass="auto-style165"></asp:TextBox>
             <br />
-            <asp:TextBox ID="emp_add" runat="server" CssClass="auto-style72" BorderStyle="None"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="name_of_emp" CssClass="auto-style133" ErrorMessage="Input Name of Employer!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="name_of_emp" CssClass="auto-style133" ErrorMessage="*Input Name of Employer!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="work" runat="server" CssClass="auto-style166"></asp:TextBox>
             <br />
+            <asp:TextBox ID="employyer_id" runat="server" BorderStyle="None" CssClass="auto-style167"></asp:TextBox>
             <asp:Table ID="Table5" runat="server" Caption="Financial Information" CssClass="auto-style60" CaptionAlign="Left">
                 <asp:TableRow runat="server">
                     <asp:TableCell runat="server" Height="20px">Source of Funds</asp:TableCell>
@@ -769,7 +772,8 @@
             </asp:Table>
             <asp:TextBox ID="name_of_emp" runat="server" CssClass="auto-style70" BorderStyle="None"></asp:TextBox>
             <asp:TextBox ID="pos_rank" runat="server" CssClass="auto-style73" BorderStyle="None"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="yr_emp" CssClass="auto-style134" ErrorMessage="Input Years!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="yr_emp" CssClass="auto-style134" ErrorMessage="*Input Years!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="mobile" runat="server" CssClass="auto-style164"></asp:TextBox>
             <br />
             <br />
             <asp:DropDownList ID="DropDownList2" runat="server" CssClass="auto-style68">
@@ -830,7 +834,7 @@
             <br />
             <br />
             <br />
-            <asp:RangeValidator ID="RangeValidator23" runat="server" ControlToValidate="tel_no" CssClass="auto-style112" ErrorMessage="Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000"></asp:RangeValidator>
+            <asp:RangeValidator ID="RangeValidator23" runat="server" ControlToValidate="tel_no" CssClass="auto-style112" ErrorMessage="*Invalid Number!" MaximumValue="99999999999" MinimumValue="00000000000" Font-Size="Small" ForeColor="Red"></asp:RangeValidator>
             <br />
             <asp:TextBox ID="name_business" runat="server" CssClass="auto-style74" BorderStyle="None"></asp:TextBox>
             <asp:TextBox ID="year_business" runat="server" CssClass="auto-style75" BorderStyle="None"></asp:TextBox>
@@ -838,11 +842,11 @@
             <asp:TextBox ID="tel_no" runat="server" CssClass="auto-style77" BorderStyle="None"></asp:TextBox>
             <asp:TextBox ID="ml_name" runat="server" CssClass="auto-style78"></asp:TextBox>
             <asp:TextBox ID="mf_name" runat="server" CssClass="auto-style79"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="emp_add" CssClass="auto-style135" ErrorMessage="Input Employer's Address!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="pos_rank" CssClass="auto-style136" ErrorMessage="Input Position/Rank!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="bus_add" CssClass="auto-style137" ErrorMessage="Input Business Address!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="employyer_id" CssClass="auto-style135" ErrorMessage="*Input Employer's Address!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="pos_rank" CssClass="auto-style136" ErrorMessage="*Input Position/Rank!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="bus_add" CssClass="auto-style137" ErrorMessage="*Input Business Address!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator34" runat="server" ControlToValidate="tel_no" CssClass="auto-style154" ErrorMessage="Input Telephone Number!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator34" runat="server" ControlToValidate="tel_no" CssClass="auto-style154" ErrorMessage="*Input Telephone Number!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:TextBox ID="dep_name" runat="server" CssClass="auto-style81"></asp:TextBox>
@@ -855,12 +859,10 @@
             <asp:TextBox ID="bday2" runat="server" CssClass="auto-style88"></asp:TextBox>
             <asp:TextBox ID="bday3" runat="server" CssClass="auto-style89"></asp:TextBox>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="ml_name" CssClass="auto-style138" ErrorMessage="Input Last Name!"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="ml_name" CssClass="auto-style138" ErrorMessage="*Input Last Name!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="mf_name" CssClass="auto-style139" ErrorMessage="Input First Name"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="mmid_name" CssClass="auto-style140" ErrorMessage="Input Middle Name!"></asp:RequiredFieldValidator>
-            <br />
-            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="mf_name" CssClass="auto-style139" ErrorMessage="*Input First Name" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="mmid_name" CssClass="auto-style140" ErrorMessage="*Input Middle Name!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <br />
             <br />
             <br />
@@ -870,16 +872,18 @@
             <br />
             <br />
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator28" runat="server" ControlToValidate="bday2" CssClass="auto-style148" ErrorMessage="Input Birthday!"></asp:RequiredFieldValidator>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="dep_name" CssClass="auto-style141" ErrorMessage="Input Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="dep1_name" CssClass="auto-style142" ErrorMessage="Input Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="dep2_name" CssClass="auto-style143" ErrorMessage="Input Name!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator24" runat="server" ControlToValidate="relation1" CssClass="auto-style144" ErrorMessage="Input Relationship!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator25" runat="server" ControlToValidate="relation2" CssClass="auto-style145" ErrorMessage="Input Relationship!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="relation3" CssClass="auto-style146" ErrorMessage="Input Relationship!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="bday1" CssClass="auto-style147" ErrorMessage="Input Birthday!"></asp:RequiredFieldValidator>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="bday3" CssClass="auto-style149" ErrorMessage="Input Birthday!"></asp:RequiredFieldValidator>
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator28" runat="server" ControlToValidate="bday2" CssClass="auto-style148" ErrorMessage="*Input Birthday!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="dep_name" CssClass="auto-style141" ErrorMessage="*Input Name!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="dep1_name" CssClass="auto-style142" ErrorMessage="*Input Name!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="dep2_name" CssClass="auto-style143" ErrorMessage="*Input Name!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator24" runat="server" ControlToValidate="relation1" CssClass="auto-style144" ErrorMessage="*Input Relationship!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator25" runat="server" ControlToValidate="relation2" CssClass="auto-style145" ErrorMessage="*Input Relationship!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="relation3" CssClass="auto-style146" ErrorMessage="*Input Relationship!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="bday1" CssClass="auto-style147" ErrorMessage="*Input Birthday!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="bday3" CssClass="auto-style149" ErrorMessage="*Input Birthday!" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:Button ID="out_btn" runat="server" CssClass="auto-style156" OnClick="out_btn_Click" Text="Submit" />
         </div>
     </form>
