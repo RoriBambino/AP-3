@@ -9,10 +9,7 @@
         .auto-style1 {
             height: 1597px;
             width: 1242px;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-        }
+            }
         .auto-style2 {
             position: absolute;
             top: 71px;
@@ -228,18 +225,6 @@
             position: absolute;
             top: 279px;
             left: 252px;
-            z-index: 1;
-        }
-        .auto-style36 {
-            position: absolute;
-            top: 279px;
-            left: 298px;
-            z-index: 1;
-        }
-        .auto-style37 {
-            position: absolute;
-            top: 278px;
-            left: 366px;
             z-index: 1;
         }
         .auto-style38 {
@@ -681,12 +666,6 @@
             z-index: 1;
             width: 352px;
         }
-        .auto-style108 {
-            position: absolute;
-            top: 1069px;
-            left: 263px;
-            z-index: 1;
-        }
         .auto-style109 {
             position: absolute;
             top: 1053px;
@@ -700,16 +679,113 @@
             z-index: 1;
             width: 234px;
         }
-        .auto-style111 {
+        .auto-style112 {
             position: absolute;
-            top: 1070px;
-            left: 693px;
+            top: 1052px;
+            left: 881px;
+            z-index: 1;
+        }
+        .auto-style113 {
+            position: absolute;
+            top: 1050px;
+            left: 976px;
+            z-index: 1;
+            width: 150px;
+        }
+        .auto-style115 {
+            position: absolute;
+            top: 1096px;
+            left: 29px;
+            z-index: 1;
+        }
+        .auto-style116 {
+            position: absolute;
+            top: 1094px;
+            left: 118px;
+            z-index: 1;
+            width: 353px;
+        }
+        .auto-style118 {
+            position: absolute;
+            top: 1096px;
+            left: 529px;
+            z-index: 1;
+        }
+        .auto-style119 {
+            position: absolute;
+            top: 1093px;
+            left: 615px;
+            z-index: 1;
+            width: 234px;
+        }
+        .auto-style121 {
+            position: absolute;
+            top: 1095px;
+            left: 881px;
+            z-index: 1;
+        }
+        .auto-style122 {
+            position: absolute;
+            top: 1093px;
+            left: 976px;
+            z-index: 1;
+            width: 149px;
+        }
+        .auto-style124 {
+            position: absolute;
+            top: 1140px;
+            left: 28px;
+            z-index: 1;
+        }
+        .auto-style125 {
+            position: absolute;
+            top: 1139px;
+            left: 116px;
+            z-index: 1;
+            width: 356px;
+        }
+        .auto-style127 {
+            position: absolute;
+            top: 1140px;
+            left: 530px;
+            z-index: 1;
+        }
+        .auto-style128 {
+            position: absolute;
+            top: 1139px;
+            left: 618px;
+            z-index: 1;
+            width: 231px;
+        }
+        .auto-style130 {
+            position: absolute;
+            top: 1139px;
+            left: 881px;
+            z-index: 1;
+        }
+        .auto-style131 {
+            position: absolute;
+            top: 1137px;
+            left: 974px;
+            z-index: 1;
+            width: 154px;
+        }
+        .auto-style133 {
+            position: absolute;
+            top: 1217px;
+            left: 1052px;
+            z-index: 1;
+        }
+        .auto-style134 {
+            position: absolute;
+            top: 277px;
+            left: 301px;
             z-index: 1;
         }
     </style>
 </head>
 <body style="height: 1604px; width: 1242px; margin-left: 0px; margin-top: 0px; margin-bottom: 3px;">
-    <form id="form1" runat="server" class="auto-style1" style="z-index: 1">
+    <form id="form1" runat="server" class="auto-style1">
         <p>
             &nbsp;</p>
         <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Font-Size="Large" ForeColor="#666666" Text="Personal Information Form Entry"></asp:Label>
@@ -764,8 +840,6 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="post_code" CssClass="auto-style32" ErrorMessage="*Input Post Code" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:Label ID="Label14" runat="server" CssClass="auto-style33" Text="Marital Status"></asp:Label>
         <asp:Label ID="Label15" runat="server" CssClass="auto-style35" Text="Sex"></asp:Label>
-        <asp:RadioButton ID="RadioButton1" runat="server" CssClass="auto-style36" GroupName="sex" Text="Male" />
-        <asp:RadioButton ID="RadioButton2" runat="server" CssClass="auto-style37" GroupName="sex" Text="Female" />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="nationality" CssClass="auto-style43" ErrorMessage="*Input Nationality" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:TextBox ID="national_id" runat="server" CssClass="auto-style45"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="national_id" CssClass="auto-style46" ErrorMessage="*Input National ID/Passport" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -777,6 +851,11 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="highest_edu" CssClass="auto-style53" ErrorMessage="*Input Highest Education" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
         <br />
+        <asp:DropDownList ID="DropDownList4" runat="server" CssClass="auto-style134">
+            <asp:ListItem>Sex</asp:ListItem>
+            <asp:ListItem>Male</asp:ListItem>
+            <asp:ListItem>Female</asp:ListItem>
+        </asp:DropDownList>
         <br />
         <br />
         <br />
@@ -878,10 +957,8 @@
         <asp:Label ID="Label41" runat="server" CssClass="auto-style105" Font-Size="Large" Text="Dependents"></asp:Label>
         <asp:Label ID="Label42" runat="server" CssClass="auto-style106" Text="Name"></asp:Label>
         <asp:TextBox ID="dep_name1" runat="server" CssClass="auto-style107"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="dep_name1" CssClass="auto-style108" ErrorMessage="*Input Name" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <asp:Label ID="Label43" runat="server" CssClass="auto-style109" Text="Relationship"></asp:Label>
         <asp:TextBox ID="relation1" runat="server" CssClass="auto-style110"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="relation1" CssClass="auto-style111" ErrorMessage="*Input Relation" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
         <br />
         <br />
@@ -894,6 +971,26 @@
         <br />
         <br />
         <br />
+        <br />
+        <asp:Label ID="Label44" runat="server" CssClass="auto-style112" Text="Birthday"></asp:Label>
+        <asp:TextBox ID="dep_bday1" runat="server" CssClass="auto-style113"></asp:TextBox>
+        <asp:Label ID="Label45" runat="server" CssClass="auto-style115" Text="Name"></asp:Label>
+        <asp:TextBox ID="dep_name2" runat="server" CssClass="auto-style116"></asp:TextBox>
+        <asp:Label ID="Label46" runat="server" CssClass="auto-style118" Text="Relationship"></asp:Label>
+        <asp:TextBox ID="relation2" runat="server" CssClass="auto-style119"></asp:TextBox>
+        <asp:Label ID="Label47" runat="server" CssClass="auto-style121" Text="Birthday"></asp:Label>
+        <asp:TextBox ID="dep_bday2" runat="server" CssClass="auto-style122"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label48" runat="server" CssClass="auto-style124" Text="Name"></asp:Label>
+        <asp:TextBox ID="dep_name3" runat="server" CssClass="auto-style125"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label49" runat="server" CssClass="auto-style127" Text="Relationship"></asp:Label>
+        <asp:TextBox ID="relation3" runat="server" CssClass="auto-style128"></asp:TextBox>
+        <asp:Label ID="Label50" runat="server" CssClass="auto-style130" Text="Birthday"></asp:Label>
+        <asp:TextBox ID="dep_bday3" runat="server" CssClass="auto-style131"></asp:TextBox>
+        <asp:Button ID="submit" runat="server" CssClass="auto-style133" Font-Bold="True" Font-Size="Medium" Text="Submit" OnClick="submit_Click" />
     </form>
     <p>
         &nbsp;</p>
